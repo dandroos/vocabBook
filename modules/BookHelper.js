@@ -74,8 +74,6 @@ module.exports = {
         });
     },
 
-    delete() {},
-
     addWord(book_id, newData) {
         return new Promise((res, rej) => {
             StorageHelper.open()
@@ -87,7 +85,6 @@ module.exports = {
                                 ...newData,
                                 id: uniqid("word_")
                             });
-                            // i.words[i.category].push(newData)
                             return {
                                 ...i,
                                 words: { ...wordsArray },
@@ -121,14 +118,12 @@ module.exports = {
                                 }
                             });
                         }
-
                         const newWords = {
                             noun: [],
                             adjective: [],
                             verb: [],
                             adverb: []
                         }
-
                         words.map((word)=>{
                             newWords[word.category].push(word);
                         })

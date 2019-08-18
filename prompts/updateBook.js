@@ -4,9 +4,6 @@ const colors = require("colors");
 const head = require("./head");
 
 module.exports = () => {
-
-
-
     return new Promise((res, rej)=>{
         console.clear();
         BookHelper.find().then(books => {
@@ -95,5 +92,4 @@ module.exports = () => {
             });
         });
     })
-    
 };

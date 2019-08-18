@@ -74,18 +74,6 @@ module.exports = () => {
                 answer.option === "delete_word"
                     ? deleteWordPrompt().then(runMainPrompt)
                     : null;
-                // answer.option === 'add_book' ? addBookPrompt().then(runMainPrompt) : null;
-
-                // switch (answer.option) {
-                //     case "add_book":
-                //         addBookPrompt().then(()=>{
-                //             runMainPrompt()
-                //             break;
-                //         }
-                //             )
-                //     case "update_book":
-                //         updateBookPrompt().then(runMainPrompt)
-                // }
             });
         });
     })();

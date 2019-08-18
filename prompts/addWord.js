@@ -76,11 +76,6 @@ module.exports = () => {
                         res();
                     }
                 });
-
-                // console.log(answers);
-                // setTimeout(()=>{
-                //     res()
-                // }, 5000)
             });
         });
     });

@@ -36,7 +36,6 @@ module.exports = () => {
                     console.info(`You are currently viewing....`.magenta);
                     console.info(book.book_name.cyan);
                     console.info();
-                    // Total words (broken down by category)
                     console.info(`This book contains....`.magenta);
                     console.info(`Nouns: ${book.words.noun.length}`.cyan);
                     console.info(`Verbs: ${book.words.verb.length}`.cyan);
@@ -44,7 +43,6 @@ module.exports = () => {
                         `Adjectives: ${book.words.adjective.length}`.cyan
                     );
                     console.info(`Adverbs: ${book.words.adverb.length}`.cyan);
-                    // Last modified
                     console.info();
                     console.info("Additional info....".magenta);
                     console.info(
@@ -129,7 +127,6 @@ module.exports = () => {
                                                 }
                                             }),
                                             {
-                                                // minWidth: 35,
                                                 columnSplitter: "|",
                                                 showHeaders: false
                                             }
@@ -175,7 +172,6 @@ module.exports = () => {
                                             );
                                         }),
                                         {
-                                            // minWidth: 35,
                                             columnSplitter: "|",
                                             showHeaders: false
                                         }
@@ -222,16 +218,4 @@ module.exports = () => {
             });
         });
     });
-
-    // DISPLAY
 };
-
-// MENU
-// 1. View all
-// 2. View nouns
-// 3. View verbs
-// 4. View adjectives
-// 5. View other
-// 6. Edit book details
-
-// 7. Back to main menu

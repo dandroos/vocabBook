@@ -56,7 +56,6 @@ module.exports = () => {
                         }
                     ]).then(answer => {
                         const responses = answer.selected_word;
-                        console.warn(responses.original_word);
                         console.info(
                             `You have selected ${responses.original_word}`
                         );
