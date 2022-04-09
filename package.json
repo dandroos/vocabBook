@@ -14,7 +14,7 @@
     "columnify": "^1.5.4",
     "commander": "^3.0.0",
     "inquirer": "^6.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "shelljs": "^0.8.3",
     "uniqid": "^5.0.3"
   }
